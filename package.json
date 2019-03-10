@@ -4,26 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn k && nodemon  ./src/index.js --exec babel-node",
-    "go": "babel-watch -w src src/index.js",
-    "p": "babel-watch demo/MongoPlayGround.js",
-    "k": "kill $(lsof -t -i :1396)"
+    "start": "nodemon  ./src/ --exec babel-node",
+    "kill": "kill $(lsof -t -i :1396)"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphql-yoga": "^1.16.9",
-    "mongoose": "^5.4.1"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.18",
+    "mongoose-paginate": "^5.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-watch": "^2.0.7",
-    "faker": "^4.1.0",
-    "manakin": "^0.5.2",
     "nodemon": "^1.18.9"
   }
 }

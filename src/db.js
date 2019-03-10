@@ -20,4 +20,6 @@ const connectToDB = new Promise((resolve, reject) => {
     });
 });
 
-export default connectToDB;
+export {
+  connectToDB
+};
